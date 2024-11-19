@@ -1,0 +1,14 @@
+[versions]
+agp = "8.5.2"
+kotlin = "1.9.22"
+coroutines = "1.9.0"
+firebase-bom = "33.6.0"
+
+[libraries]
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
